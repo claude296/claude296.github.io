@@ -1,3 +1,5 @@
+
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +36,39 @@
         </div>
     </div>
 
-<p>Questions? Email us at <a href="mailto:emailresponseteam001@gmail.com" style="color: #f97316;">emailresponseteam001@gmail.com</a></p>   
+<p>Questions? Email us at <a href="mailto:emailresponseteam001@gmail.com" style="color: #f97316;">emailresponseteam001@gmail.com</a></p>
+<div data-fs-success style="display:none; padding:1em; background:#e6ffed; border:1px solid #2ecc71; border-radius:6px; margin-bottom:1em;">
+  Thanks! Your quote request has been sent — we'll be in touch soon.
+</div>
+<div data-fs-error style="display:none; padding:1em; background:#ffe6e6; border:1px solid #e74c3c; border-radius:6px; margin-bottom:1em;">
+  Oops! There was a problem sending your request. Please try again.
+</div>
+
+<form id="quote-form">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" data-fs-field required />
+  <span data-fs-error="name"></span>
+
+  <label for="address">Address</label>
+  <input type="text" id="address" name="address" data-fs-field required />
+  <span data-fs-error="address"></span>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" data-fs-field required />
+  <span data-fs-error="email"></span>
+
+  <label for="comment">What do you need a quote for?</label>
+  <textarea id="comment" name="comment" data-fs-field></textarea>
+  <span data-fs-error="comment"></span>
+
+  <button type="submit" data-fs-submit-btn>Request Quote</button>
+</form>
+
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#quote-form', formId: 'xkodvygo' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>   
  <p class="demo-note">This is a demo site built to test interest in local service websites — not an active business.</p>
 
     <script data-goatcounter="https://curbcrew.goatcounter.com/count"
