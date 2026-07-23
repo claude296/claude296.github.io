@@ -1,3 +1,4 @@
+cat > ~/Workspace/Projects/ai_business/mysite/index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,28 +20,18 @@
         .quote-form-wrapper button { margin-top: 20px; padding: 12px 24px; background-color: #f97316; color: white; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; }
         .quote-form-wrapper button:hover { background-color: #ea580c; }
         .quote-form-wrapper button:disabled { background-color: #7c3f13; cursor: not-allowed; }
+        .split-hero { display: flex; height: 350px; }
+        .split-hero .side { flex: 1; background-size: cover; background-position: center; }
+        .lawn-side { background-image: url("images/lawn-bg.jpg"); }
+        .snow-side { background-image: url("images/snow-bg.jpg"); }
     </style>
-.split-hero {
-  display: flex;
-  height: 350px;
-}
-.split-hero .side {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-}
-.lawn-side {
-  background-image: url("images/lawn-bg.jpg");
-}
-.snow-side {
-  background-image: url("images/snow-bg.jpg");
-}
 </head>
-<div class="split-hero">
-  <div class="side lawn-side"></div>
-  <div class="side snow-side"></div>
-</div>
 <body>
+
+    <div class="split-hero">
+      <div class="side lawn-side"></div>
+      <div class="side snow-side"></div>
+    </div>
 
     <h1>Curb Appeal Crew</h1>
     <p>Reliable year-round property care — lawn mowing and maintenance in summer, driveway and walkway snow removal in winter.</p>
@@ -127,3 +118,4 @@
 
 </body>
 </html>
+EOF
