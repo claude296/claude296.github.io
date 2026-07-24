@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curb Appeal Crew</title>
-<meta name="description" content="Affordable, reliable lawn care and snow removal for homes and businesses—quality service in every season.">
+<meta name="description" content="Connect with trusted local lawn care and snow removal professionals—fast, easy, and hassle-free.">
     <meta name="keywords" content="lawn care, lawn mowing, snow removal, snow plowing, landscaping, property maintenance">
 <link rel="canonical" href="https://claude296.github.io/">
     <style>
@@ -14,6 +14,9 @@
         .services { display: flex; justify-content: center; gap: 30px; margin-top: 40px; flex-wrap: wrap; }
         .service-card { background-color: #2d3748; padding: 20px; border-radius: 8px; width: 220px; }
         .service-card h3 { color: #f97316; }
+        .how-it-works { max-width: 600px; margin: 50px auto; text-align: left; }
+        .how-it-works h2 { color: #f97316; text-align: center; }
+        .how-it-works ol { color: #cbd5e1; font-size: 1.1rem; line-height: 1.8; }
         .quote-form-wrapper { max-width: 500px; margin: 40px auto; padding: 30px; background-color: #2d3748; border-radius: 8px; text-align: left; }
         .quote-form-wrapper label { display: block; margin-top: 15px; margin-bottom: 5px; color: #cbd5e1; font-weight: bold; }
         .quote-form-wrapper input, .quote-form-wrapper textarea { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #4a5568; background-color: #1a202c; color: white; box-sizing: border-box; font-size: 1rem; }
@@ -36,28 +39,37 @@
       <div class="side snow-side"></div>
     </div>
 
-    <p>Reliable year-round property care — lawn mowing and maintenance in summer, driveway and walkway snow removal in winter.</p>
+    <p>Get matched with a local lawn care or snow removal provider — no bidding, no cold calls, just one simple form.</p>
 
     <div class="services">
         <div class="service-card">
             <h3>Lawn Care</h3>
-            <p>Weekly mowing, edging, and cleanup.</p>
+            <p>Connect with local pros for weekly mowing, edging, and cleanup.</p>
         </div>
         <div class="service-card">
             <h3>Snow Removal</h3>
-            <p>Driveway plowing and walkway clearing, same-day after snowfall.</p>
+            <p>Get matched with reliable local plow and shovel crews, same-day after snowfall.</p>
         </div>
         <div class="service-card">
             <h3>Seasonal Contracts</h3>
-            <p>One flat rate, year-round coverage.</p>
+            <p>Find a provider offering year-round coverage at one flat rate.</p>
         </div>
+    </div>
+
+    <div class="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Tell us what you need — lawn care, snow removal, or both.</li>
+            <li>We reach out to match you with a local provider.</li>
+            <li>They contact you directly to schedule and quote the job.</li>
+        </ol>
     </div>
 
 <p>Questions? Email us at <a href="mailto:emailresponseteam001@gmail.com" style="color: #f97316;">emailresponseteam001@gmail.com</a></p>
 
 <div class="quote-form-wrapper">
 <div id="fs-success" style="display:none; padding:1em; background:#e6ffed; color:#1a202c; border:1px solid #2ecc71; border-radius:6px; margin-bottom:1em;">
-  Thanks! Your quote request has been sent — we'll be in touch soon.
+  Thanks! Your request has been sent — we'll connect you with a local provider soon.
 </div>
 <div id="fs-error" style="display:none; padding:1em; background:#ffe6e6; color:#1a202c; border:1px solid #e74c3c; border-radius:6px; margin-bottom:1em;">
   Oops! There was a problem sending your request. Please try again.
@@ -73,13 +85,12 @@
   <label for="email">Email</label>
   <input type="email" id="email" name="email" required />
 
-  <label for="comment">What do you need a quote for?</label>
+  <label for="comment">What do you need done?</label>
   <textarea id="comment" name="comment"></textarea>
 
-  <button type="submit" id="quote-submit-btn">Request Quote</button>
+  <button type="submit" id="quote-submit-btn">Get Matched</button>
 </form>
 </div>
-
 
 <script data-goatcounter="https://curbcrew.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
@@ -112,7 +123,7 @@
       errorBox.style.display = 'block';
     }).finally(() => {
       submitBtn.disabled = false;
-      submitBtn.textContent = 'Request Quote';
+      submitBtn.textContent = 'Get Matched';
     });
   });
 </script>
